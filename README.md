@@ -2,6 +2,19 @@
 
 ## Name of the App: Travel Trace
 
+## Team Members
+- Julio Cesar Rodriguez
+- Jin Sik Yoon
+- Diego de la Vega
+- Santiago Coronado
+- Rebeca Davila
+- Juan Pablo Narchi
+- Nicolas Quintana
+- Sergio Xuan
+- Sebastian Borjas
+- Fausto Izquierdo
+- Diego Ortega
+
 ## Mission statement
 Transform the administration of Mexican companies through the creation of an intuitive software which will be safe and of high impact.
 
