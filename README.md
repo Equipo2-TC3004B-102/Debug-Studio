@@ -1,6 +1,7 @@
 # Debug-Studio
 
 ## Name of the App: Travel Trace
+<img width="512" height="512" alt="LogoDebugStudio" src="https://github.com/user-attachments/assets/de82a732-d8ca-4633-bc52-d2190dcbfaa7" />
 
 ## Team Members
 - Julio Cesar Rodriguez
