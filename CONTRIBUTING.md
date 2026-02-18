@@ -4,9 +4,17 @@ Gracias por contribuir a este proyecto.
 
 ## Normativas Generales
 - Todo el código se debe de escribir en **inglés**.
-- Todas las funciones deben de tener una descripción de qué hace antes de su declaración.
-- Todos los archivos deben de tener una descripción del mismo en la parte superior, en el comentario debe estar la última fecha de edición y autores.
+- Todas las funciones deben de tener una descripción de qué hace antes de su declaración. **En el Backend, se deben detallar especialmente los parámetros y la lógica de negocio.**
+- Todos los archivos deben de tener una descripción del mismo en la parte superior, en el comentario debe estar la última fecha de edición y autores. **Si se realiza un fix, se debe especificar el autor de dicha corrección en el encabezado.**
 - Los archivos no deben de ser más extensos que 1000 líneas, en caso de exceder, dividir. 
+
+---
+
+## 👥 Segmentación del Equipo
+Para optimizar el desarrollo entre los 11 integrantes, el equipo se divide en:
+- **Frontend:** Responsables de la interfaz y estado en React.
+- **Backend:** Responsables de la API, servicios y base de datos en NestJS.
+- **Pruebas (QA):** Responsables de validar que cada cambio cumpla con el Plan de Pruebas.
 
 ---
 
@@ -81,24 +89,29 @@ Nombres de tablas de bases de datos en plural, columnas en singular.
         ```
 ---
 
-
 ## 🧠 GitFlow
 
-Seguimos el modelo [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/), con las siguientes ramas principales:
+Seguimos el modelo [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/):
 
 | Rama          | Propósito                           |
 |---------------|-------------------------------------|
-| `main`        | Código listo para producción        |
-| `develop`     | Última versión estable en desarrollo |
-| `feature/*`   | Nuevas funcionalidades              |
-| `bugfix/*`    | Corrección de errores               |
-| `hotfix/*`    | Correcciones urgentes en producción |
-| `release/*`   | Preparación para una nueva versión  |
+| `main`        | Código listo para producción (entregables finales). |
+| `develop`     | Última versión estable en desarrollo. |
+| `feature/*`   | Nuevas funcionalidades.              |
+| `bugfix/*`    | Corrección de errores.               |
+| `release/*`   | Preparación para una nueva versión (Semana 3 y 5). |
 
-### 💡 Ejemplos:
-- `feature/login-form`
-- `bugfix/date-validation`
-- `release/v1.0.0`
+### Nota sobre el flujo de estabilidad (Ramas Release)
+
+El paso de código de la rama `develop` a `main` no es directo. Será necesario el uso de ramas `release/*`:
+
+1.  **Aislamiento para el Entregable:** Al llegar a un hito, se crea la rama `release/vX.Y.Z`. Esto genera un "congelamiento de código" (code freeze) en tal versión, permitiendo que el equipo de desarrollo continúe trabajando en nuevas funciones en `develop` sin afectar la estabilidad de lo que se va a entregar.
+
+2.  **Validación Rigurosa:** Esta rama es el escenario exclusivo para ejecutar el plan de pruebas. Aquí se validan tanto los requerimientos funcionales (flujos del Mapa Global de Operaciones) como los no funcionales (seguridad, carga y portabilidad). Solo si el sistema supera estas validaciones sin errores críticos, se considera estable.
+
+3.  **Garantía de Calidad en `main`:** La rama `main` representa exclusivamente versiones terminadas, probadas y aprobadas por el equipo de Backend, Frontend y QA. Al usar una rama `release/*` como filtro, aseguramos evitar errores accidental de integración.
+
+4.  **Cierre del Ciclo:** Una vez realizada la entrega, la rama `release/*` se fusiona con `main` (etiquetándola con su versión correspondiente) y también se reintegra a `develop` para asegurar que cualquier corrección de último minuto se mantenga en el flujo de desarrollo futuro.
 
 ---
 
@@ -122,12 +135,16 @@ Usamos [Conventional Commits](https://www.conventionalcommits.org/):
 - `feat(frontend): agregar pantalla de login`
 - `fix(auth): corregir bug de token`
 
+
 ---
 
-## ✅ Checklist para Pull Requests
+## ✅ Proceso de Pull Requests 
 
+Para integrar código a `develop`, se debe cumplir este checklist:
 - [ ] La rama parte desde `develop`
 - [ ] La funcionalidad está probada y funciona
 - [ ] El código sigue los estándares de formato y estilo
 - [ ] El commit sigue la convención (`feat:`, `fix:`, etc.)
+- [ ] **Aprobación:** Se requiere la revisión y aprobación de al menos un integrante de cada equipo (Front, Back, y QA).
 - [ ] Se ha actualizado la documentación (si aplica)
+
