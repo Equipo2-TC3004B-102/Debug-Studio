@@ -187,7 +187,7 @@ Seguimos el modelo [GitFlow](https://nvie.com/posts/a-successful-git-branching-m
 
 El paso de código de la rama `develop` a `main` no es directo. Será necesario el uso de ramas `release/*`:
 
-1.  **Aislamiento para el Entregable:** Al llegar a un hito, se crea la rama `release/vX.Y.Z`. Esto genera un "congelamiento de código" (code freeze) en tal versión, permitiendo que el equipo de desarrollo continúe trabajando en nuevas funciones en `develop` sin afectar la estabilidad de lo que se va a entregar.
+1.  **Aislamiento para el Entregable:** Al llegar a un hito, se crea la rama `release/nombre o area/vX.Y.Z`. Esto genera un "congelamiento de código" (code freeze) en tal versión, permitiendo que el equipo de desarrollo continúe trabajando en nuevas funciones en `develop` sin afectar la estabilidad de lo que se va a entregar.
 
 2.  **Validación Rigurosa:** Esta rama es el escenario exclusivo para ejecutar el plan de pruebas. Aquí se validan tanto los requerimientos funcionales (flujos del Mapa Global de Operaciones) como los no funcionales (seguridad, carga y portabilidad). Solo si el sistema supera estas validaciones sin errores críticos, se considera estable.
 
