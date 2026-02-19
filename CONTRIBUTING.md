@@ -7,16 +7,44 @@ Gracias por contribuir a este proyecto.
 - Todas las funciones deben de tener una descripción de qué hace antes de su declaración. **En el Backend, se deben detallar especialmente los parámetros y la lógica de negocio.**
 - Todos los archivos deben de tener una descripción del mismo en la parte superior, en el comentario debe estar la última fecha de edición y autores. **Si se realiza un fix, se debe especificar el autor de dicha corrección en el encabezado.**
 - Los archivos no deben de ser más extensos que 1000 líneas, en caso de exceder, dividir. 
+- Para las funciones dentro de los archivos se debe incluir argumentos de entrada, titulo y para que sirve. 
+- Al inicio de cada archivo debe incluirse la fecha de modificación y que se encuentra dentro del archivo.
 
 ---
 
 ## 👥 Segmentación del Equipo
-Para optimizar el desarrollo entre los 11 integrantes, el equipo se divide en:
-- **Proyect Manager:** Responsable de planificar el plan de trabajo, realizando el seguimiento del avance del mismo, además de coordinar la comunicación en el equipo.
-- **Leader Architecture:** Responsable del diseño técnico y de las desiciones de la arquitectura de todo el sistema.
-- **Equipo de Frontend:** Responsables de la interfaz y estado en React.
-- **Equipo de Backend:** Responsables de la API, servicios y base de datos en NestJS.
-- **QA:** Responsables de validar que cada cambio cumpla con el Plan de Pruebas.
+
+Para optimizar el desarrollo entre los 10 integrantes, el equipo se divide en:
+
+### Project Manager
+**Responsabilidad:** Planificar el plan de trabajo, realizar seguimiento del avance y coordinar la comunicación en el equipo.
+- `Sergio Xuan`
+
+### Leader Architecture
+**Responsabilidad:** Diseño técnico y decisiones de la arquitectura de todo el sistema.
+- `Julio César Rodríguez`
+
+### Equipo de Frontend
+**Responsabilidad:** Interfaz y estado en React.
+- `Rebeca Davila Araiza` Líder de equipo.
+- `Nicolas Quintana`
+- `Fausto Izquierdo`
+
+
+
+### Equipo de Backend y Base de Datos
+**Responsabilidad:** API, servicios y base de datos en NestJS.
+- `Santiago Coronado` Líder de equipo.
+- `Diego de la Vega`
+- `Jin Sik Yoon`
+- `Sebastian Borjas`
+- `Juan Pablo Narchi`
+
+### QA 
+**Responsabilidad:** Son los encargados de verificar los Pull Request y la funcionalidad de lo que se esta implementando en el momento. Estos irán rotando con el tiempo para que todos podamos revisar la calidad del mismo.
+
+### Testing 
+**Responsabilidad** Todo el equipo realizará las pruebas que se encontrarán en el plan de pruebas. 
 
 ---
 
@@ -202,5 +230,5 @@ Para integrar código a `develop`, se debe cumplir este checklist:
 - [ ] **Aprobación:** Se requiere la revisión y aprobación de al menos un integrante de cada equipo (Front, Back, y QA).
 - [ ] Se ha actualizado la documentación (si aplica)
 
-Una vez se complete este proceso, se podrá subir a la rama de main por alguno de los lideres que aprueben el pull request en `develop`.
+Una vez se complete este proceso, se podrá subir a la rama de main por alguno de los Líderes de los respectivos equipos que aprueben el pull request en `develop`.
 
