@@ -8,7 +8,7 @@ Gracias por contribuir a este proyecto.
 - Todos los archivos deben de tener una descripción del mismo en la parte superior, en el comentario debe estar la última fecha de edición y autores. **Si se realiza un fix, se debe especificar el autor de dicha corrección en el encabezado.**
 - Los archivos no deben de ser más extensos que 1000 líneas, en caso de exceder, dividir. 
 - Para las funciones dentro de los archivos se debe incluir argumentos de entrada, titulo y para que sirve. 
-- Al inicio de cada archivo debe incluirse la fecha de modificación, y que se encuentra dentro del archivo.
+- Al inicio de cada archivo debe incluirse la fecha de modificación y que se encuentra dentro del archivo.
 
 ---
 
@@ -26,7 +26,7 @@ Para optimizar el desarrollo entre los 10 integrantes, el equipo se divide en:
 
 ### Equipo de Frontend
 **Responsabilidad:** Interfaz y estado en React.
-- `Rebeca Davila Araiza` Lider de equipo
+- `Rebeca Davila Araiza` Líder de equipo.
 - `Nicolas Quintana`
 - `Fausto Izquierdo`
 
@@ -34,7 +34,7 @@ Para optimizar el desarrollo entre los 10 integrantes, el equipo se divide en:
 
 ### Equipo de Backend y Base de Datos
 **Responsabilidad:** API, servicios y base de datos en NestJS.
-- `Santiago Coronado` Lider de equipo
+- `Santiago Coronado` Líder de equipo.
 - `Diego de la Vega`
 - `Jin Sik Yoon`
 - `Sebastian Borjas`
@@ -44,7 +44,7 @@ Para optimizar el desarrollo entre los 10 integrantes, el equipo se divide en:
 **Responsabilidad:** Son los encargados de verificar los Pull Request y la funcionalidad de lo que se esta implementando en el momento. Estos irán rotando con el tiempo para que todos podamos revisar la calidad del mismo.
 
 ### Testing 
-**Responsabilidad** Todo el equipo realizará las pruebas que se encontráran en el plan de pruebas. 
+**Responsabilidad** Todo el equipo realizará las pruebas que se encontrarán en el plan de pruebas. 
 
 ---
 
@@ -230,5 +230,5 @@ Para integrar código a `develop`, se debe cumplir este checklist:
 - [ ] **Aprobación:** Se requiere la revisión y aprobación de al menos un integrante de cada equipo (Front, Back, y QA).
 - [ ] Se ha actualizado la documentación (si aplica)
 
-Una vez se complete este proceso, se podrá subir a la rama de main por alguno de los lideres de los respectivos equipos que aprueben el pull request en `develop`.
+Una vez se complete este proceso, se podrá subir a la rama de main por alguno de los Líderes de los respectivos equipos que aprueben el pull request en `develop`.
 
