@@ -12,9 +12,11 @@ Gracias por contribuir a este proyecto.
 
 ## 👥 Segmentación del Equipo
 Para optimizar el desarrollo entre los 11 integrantes, el equipo se divide en:
-- **Frontend:** Responsables de la interfaz y estado en React.
-- **Backend:** Responsables de la API, servicios y base de datos en NestJS.
-- **Pruebas (QA):** Responsables de validar que cada cambio cumpla con el Plan de Pruebas.
+- **Proyect Manager:** Responsable de planificar el plan de trabajo, realizando el seguimiento del avance del mismo, además de coordinar la comunicación en el equipo.
+- **Leader Architecture:** Responsable del diseño técnico y de las desiciones de la arquitectura de todo el sistema.
+- **Equipo de Frontend:** Responsables de la interfaz y estado en React.
+- **Equipo de Backend:** Responsables de la API, servicios y base de datos en NestJS.
+- **QA:** Responsables de validar que cada cambio cumpla con el Plan de Pruebas.
 
 ---
 
@@ -62,10 +64,62 @@ Para optimizar el desarrollo entre los 11 integrantes, el equipo se divide en:
         process.env.CONSTANT, process.env.POSTGRES_USER
         ```
 
-### Para capetas y achivos
+### Para carpetas y archivos
 
-- **snake_case**
-- Nombres de los archivos deben de transmitir claramente de qué trata el archivo.
+Los nombres de archivos y carpetas deben transmitir claramente de qué trata el archivo siguiendo el siguiente formato:
+
+#### Para nombres de carpetas empezando por minusculas:
+```
+Correcto:
+components/
+pages/
+assets/
+hooks/
+utils/
+config/
+types/
+
+Incorrecto:
+Components/
+Pages/
+Assets/
+Hooks/
+```
+
+#### Para nombres de archivos de componentes o páginas:
+```
+Correcto:
+Login.tsx
+Register.tsx
+Dashboard.tsx
+Bookings.tsx
+CreateTravelRequest.tsx
+EditTravelRequest.tsx
+RequestInfo.tsx
+Requests.tsx
+Error.tsx
+
+Incorrecto:
+login.tsx
+register.tsx
+dashboard.tsx
+create_travel_request.tsx
+```
+
+## Ejemplo de estructura de Archivos del Proyecto
+
+```
+frontend/
+├── src/
+│   ├── components/ # Componentes reutilizables
+│   ├── pages/ # Vistas/páginas principales (Login.tsx, Dashboard.tsx, etc.)
+│   ├── hooks/ # Custom hooks (useAuth, etc.)
+│   ├── utils/ # Funciones auxiliares
+│   ├── assets/ # Imágenes, iconos, fonts
+│   ├── config/ # Archivos de configuración
+│   └── types/ # Definiciones de tipos TypeScript
+└── public/
+```
 
 ### Para base de datos
 
@@ -147,4 +201,6 @@ Para integrar código a `develop`, se debe cumplir este checklist:
 - [ ] El commit sigue la convención (`feat:`, `fix:`, etc.)
 - [ ] **Aprobación:** Se requiere la revisión y aprobación de al menos un integrante de cada equipo (Front, Back, y QA).
 - [ ] Se ha actualizado la documentación (si aplica)
+
+Una vez se complete este proceso, se podrá subir a la rama de main por alguno de los lideres que aprueben el pull request en `develop`.
 
