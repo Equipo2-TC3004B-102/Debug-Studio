@@ -1,76 +1,74 @@
-# 🤝 Contribuciones
+# 🤝 Contributions
 
-Gracias por contribuir a este proyecto.
+Thank you for contributing to this project.
 
-## Normativas Generales
-- Todo el código se debe de escribir en **inglés**.
-- Todas las funciones deben de tener una descripción de qué hace antes de su declaración. **En el Backend, se deben detallar especialmente los parámetros y la lógica de negocio.**
-- Todos los archivos deben de tener una descripción del mismo en la parte superior, en el comentario debe estar la última fecha de edición y autores. **Si se realiza un fix, se debe especificar el autor de dicha corrección en el encabezado.**
-- Los archivos no deben de ser más extensos que 1000 líneas, en caso de exceder, dividir. 
-- Para las funciones dentro de los archivos se debe incluir argumentos de entrada, titulo y para que sirve. 
-- Al inicio de cada archivo debe incluirse la fecha de modificación y que se encuentra dentro del archivo.
+## General Guidelines
+- All code and documents must be written in **English**.
+- All functions must have a description of what they do before their declaration. **In the Backend, parameters and business logic must be especially detailed.**
+- All files must have a description at the top, including the last edit date and authors in the comment. **If a fix is made, the author of that correction must be specified in the header.**
+- Files must not exceed 1000 lines; if exceeded, split them.
+- For functions within files, input arguments, title, and purpose must be included.
+- At the top of each file, the modification date and file contents must be included.
 
 ---
 
-## 👥 Segmentación del Equipo
+## 👥 Team Segmentation
 
-Para optimizar el desarrollo entre los 10 integrantes, el equipo se divide en:
+To optimize development among the 10 members, the team is divided into:
 
 ### Project Manager
-**Responsabilidad:** Planificar el plan de trabajo, realizar seguimiento del avance y coordinar la comunicación en el equipo.
+**Responsibility:** Plan the work schedule, track progress, and coordinate team communication.
 - `Sergio Xuan`
 
 ### Leader Architecture
-**Responsabilidad:** Diseño técnico y decisiones de la arquitectura de todo el sistema.
+**Responsibility:** Technical design and architectural decisions for the entire system.
 - `Julio César Rodríguez`
 
-### Equipo de Frontend
-**Responsabilidad:** Interfaz y estado en React.
-- `Rebeca Davila Araiza` Líder de equipo.
+### Frontend Team
+**Responsibility:** UI and state management in React.
+- `Rebeca Davila Araiza` — Team Lead.
 - `Nicolas Quintana`
 - `Fausto Izquierdo`
 
-
-
-### Equipo de Backend y Base de Datos
-**Responsabilidad:** API, servicios y base de datos en NestJS.
-- `Santiago Coronado` Líder de equipo.
+### Backend & Database Team
+**Responsibility:** API, services, and database in NestJS.
+- `Santiago Coronado` — Team Lead.
 - `Diego de la Vega`
 - `Jin Sik Yoon`
 - `Sebastian Borjas`
 - `Juan Pablo Narchi`
 
-### QA 
-**Responsabilidad:** Son los encargados de verificar los Pull Request y la funcionalidad de lo que se esta implementando en el momento. Estos irán rotando con el tiempo para que todos podamos revisar la calidad del mismo.
+### QA
+**Responsibility:** Responsible for reviewing Pull Requests and verifying the functionality of what is currently being implemented. Members will rotate over time so everyone can review quality.
 
-### Testing 
-**Responsabilidad** Todo el equipo realizará las pruebas que se encontrarán en el plan de pruebas. 
+### Testing
+**Responsibility:** The entire team will carry out the tests outlined in the test plan.
 
 ---
 
-## Convención de nombres
+## Naming Conventions
 
-### Para el código
+### For Code
 
 - **camelCase**
-    - Variables 
-        ```
+    - Variables
+      ```
         myVar, i
-        ```
-    - Objeto/JSON
-        ```
+      ```
+    - Objects/JSON
+      ```
         myObject, myJSON, appService
-        ```
-    - Funciones, métodos
-        ```
+      ```
+    - Functions, methods
+      ```
         myFunction(), getOne(), Class.methodOne()
-        ```
+      ```
 - **PascalCase**
-    - Clases
-        ```
+    - Classes
+      ```
         MyClass, AppService
-        ```
-    - Tipos
+      ```
+    - Types
         ```
         MyType, Point
         ```
@@ -78,27 +76,27 @@ Para optimizar el desarrollo entre los 10 integrantes, el equipo se divide en:
         ```
         MyInterface, Person
         ```
-    - Decoradores
+    - Decorators
         ```
-        @Decorador(), @Get()
+        @Decorator(), @Get()
         ```
 - **ALLCAPS**
-    - Variables Constantes
+    - Constant variables
         ```
         COLORS, WIDTH
         ```
-    - Variables .env
+    - Environment variables
         ```
         process.env.CONSTANT, process.env.POSTGRES_USER
         ```
 
-### Para carpetas y archivos
+### For Folders and Files
 
-Los nombres de archivos y carpetas deben transmitir claramente de qué trata el archivo siguiendo el siguiente formato:
+File and folder names must clearly convey the content of the file, following this format:
 
-#### Para nombres de carpetas empezando por minusculas:
+#### Folder names starting with lowercase:
 ```
-Correcto:
+Correct:
 components/
 pages/
 assets/
@@ -107,16 +105,16 @@ utils/
 config/
 types/
 
-Incorrecto:
+Incorrect:
 Components/
 Pages/
 Assets/
 Hooks/
 ```
 
-#### Para nombres de archivos de componentes o páginas:
+#### File names for components or pages:
 ```
-Correcto:
+Correct:
 Login.tsx
 Register.tsx
 Dashboard.tsx
@@ -127,108 +125,111 @@ RequestInfo.tsx
 Requests.tsx
 Error.tsx
 
-Incorrecto:
+Incorrect:
 login.tsx
 register.tsx
 dashboard.tsx
 create_travel_request.tsx
 ```
 
-## Ejemplo de estructura de Archivos del Proyecto
-
+## Example Project File Structure
 ```
 frontend/
 ├── src/
-│   ├── components/ # Componentes reutilizables
-│   ├── pages/ # Vistas/páginas principales (Login.tsx, Dashboard.tsx, etc.)
-│   ├── hooks/ # Custom hooks (useAuth, etc.)
-│   ├── utils/ # Funciones auxiliares
-│   ├── assets/ # Imágenes, iconos, fonts
-│   ├── config/ # Archivos de configuración
-│   └── types/ # Definiciones de tipos TypeScript
+│   ├── components/   # Reusable components
+│   ├── pages/        # Main views/pages (Login.tsx, Dashboard.tsx, etc.)
+│   ├── hooks/        # Custom hooks (useAuth, etc.)
+│   ├── utils/        # Helper functions
+│   ├── assets/       # Images, icons, fonts
+│   ├── config/       # Configuration files
+│   └── types/        # TypeScript type definitions
 └── public/
 ```
 
-### Para base de datos
+### For the Database
 
-Nombres de tablas de bases de datos en plural, columnas en singular.
+Database table names in plural, column names in singular.
+
 - **snake_case**
-    - Columnas
-        ```
-        id, name, email,
-        ```
-    - Tablas
-        ```
+    - Columns
+      ```
+        id, name, email
+      ```
+    - Tables
+      ```
         approved_trips, user_roles, assistants, preferences
-        ```
+      ```
     - Databases
-        ```
+      ```
         users, trips, db
-        ```
+      ```
     - Schemas
-        ```
+      ```
         public
-        ```
+      ```
 ---
 
 ## 🧠 GitFlow
 
-Seguimos el modelo [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/):
+We follow the [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/) model:
 
-| Rama          | Propósito                           |
-|---------------|-------------------------------------|
-| `main`        | Código listo para producción (entregables finales). |
-| `develop`     | Última versión estable en desarrollo. |
-| `feature/*`   | Nuevas funcionalidades.              |
-| `bugfix/*`    | Corrección de errores.               |
-| `release/*`   | Preparación para una nueva versión (Semana 3 y 5). |
+| Branch        | Purpose                                          |
+|---------------|--------------------------------------------------|
+| `main`        | Production-ready code (final deliverables).      |
+| `develop`     | Latest stable development version.               |
+| `feature/*`   | New features.                                    |
+| `bugfix/*`    | Bug fixes.                                       |
+| `release/*`   | Preparation for a new version (Weeks 3 and 5).   |
 
-### Nota sobre el flujo de estabilidad (Ramas Release)
+### Note on the Stability Flow (Release Branches)
 
-El paso de código de la rama `develop` a `main` no es directo. Será necesario el uso de ramas `release/*`:
+The transition from `develop` to `main` is not direct. `release/*` branches are required:
 
-1.  **Aislamiento para el Entregable:** Al llegar a un hito, se crea la rama `release/nombre o area/vX.Y.Z`. Esto genera un "congelamiento de código" (code freeze) en tal versión, permitiendo que el equipo de desarrollo continúe trabajando en nuevas funciones en `develop` sin afectar la estabilidad de lo que se va a entregar.
+1. **Isolation for the Deliverable:** When a milestone is reached, a `release/name-or-area/vX.Y.Z` branch is created. This creates a code freeze for that version, allowing the development team to continue working on new features in `develop` without affecting the stability of what is being delivered.
 
-2.  **Validación Rigurosa:** Esta rama es el escenario exclusivo para ejecutar el plan de pruebas. Aquí se validan tanto los requerimientos funcionales (flujos del Mapa Global de Operaciones) como los no funcionales (seguridad, carga y portabilidad). Solo si el sistema supera estas validaciones sin errores críticos, se considera estable.
+2. **Rigorous Validation:** This branch is the exclusive environment for running the test plan. Both functional requirements (Global Operations Map flows) and non-functional requirements (security, load, and portability) are validated here. Only if the system passes these validations without critical errors is it considered stable.
 
-3.  **Garantía de Calidad en `main`:** La rama `main` representa exclusivamente versiones terminadas, probadas y aprobadas por el equipo de Backend, Frontend y QA. Al usar una rama `release/*` como filtro, aseguramos evitar errores accidental de integración.
+3. **Quality Assurance in `main`:** The `main` branch exclusively represents finished, tested, and approved versions signed off by the Backend, Frontend, and QA teams. Using a `release/*` branch as a filter prevents accidental integration errors.
 
-4.  **Cierre del Ciclo:** Una vez realizada la entrega, la rama `release/*` se fusiona con `main` (etiquetándola con su versión correspondiente) y también se reintegra a `develop` para asegurar que cualquier corrección de último minuto se mantenga en el flujo de desarrollo futuro.
-
----
-
-## 💬 Convención de commits
-
-Usamos [Conventional Commits](https://www.conventionalcommits.org/):
-
-**tipo**(área): mensaje
-
-| Tipo      | ¿Para qué se usa?                                         |
-| --------- | --------------------------------------------------------- |
-| `feat`    |  Nuevas funcionalidades                                   |
-| `fix`     |  Corrección de bugs                                       |
-| `docs`    |  Cambios en documentación                                 |
-| `style`   |  Cambios de formato (espacios, comas)                     |
-| `refactor`|  Reestructuración de código sin cambiar funcionalidad     |
-| `test`    |  Agregar o modificar pruebas                              |
-| `chore`   |  Tareas de mantenimiento (builds, dependencias)           |
-
-### 💡 Ejemplos:
-- `feat(frontend): agregar pantalla de login`
-- `fix(auth): corregir bug de token`
-
+4. **Closing the Cycle:** Once the deliverable is submitted, the `release/*` branch is merged into `main` (tagged with its corresponding version) and also reintegrated into `develop` to ensure any last-minute fixes are carried forward into future development.
 
 ---
 
-## ✅ Proceso de Pull Requests 
+## 💬 Commit Convention
 
-Para integrar código a `develop`, se debe cumplir este checklist:
-- [ ] La rama parte desde `develop`
-- [ ] La funcionalidad está probada y funciona
-- [ ] El código sigue los estándares de formato y estilo
-- [ ] El commit sigue la convención (`feat:`, `fix:`, etc.)
-- [ ] **Aprobación:** Se requiere la revisión y aprobación de al menos un integrante de cada equipo (Front, Back, y QA).
-- [ ] Se ha actualizado la documentación (si aplica)
+We use [Conventional Commits](https://www.conventionalcommits.org/):
 
-Una vez se complete este proceso, se podrá subir a la rama de main por alguno de los Líderes de los respectivos equipos que aprueben el pull request en `develop`.
+**type**(area): message
 
+| Type       | When to use it                                          |
+|------------|---------------------------------------------------------|
+| `feat`     | New features                                            |
+| `fix`      | Bug fixes                                               |
+| `docs`     | Documentation changes                                   |
+| `style`    | Formatting changes (spaces, commas)                     |
+| `refactor` | Code restructuring without changing functionality       |
+| `test`     | Adding or modifying tests                               |
+| `chore`    | Maintenance tasks (builds, dependencies)                |
+
+### 💡 Examples:
+- `feat(frontend): add login screen`
+- `fix(auth): fix token bug`
+
+---
+
+## ✅ Pull Request Process
+
+All PRs must meet the following checklist before being merged:
+
+- [ ] The branch starts from `develop`
+- [ ] The feature is tested and working
+- [ ] The code follows formatting and style standards
+- [ ] The commit follows the convention (`feat:`, `fix:`, etc.)
+- [ ] Documentation has been updated (if applicable)
+
+⚠️ No one may approve their own PR, regardless of the target branch.
+
+### Approval by target branch
+
+- **To `develop`:** Requires approval from at least 1 or 2 members of the **same team** that opened the PR.
+- **To `main` (via `release/*`):** Requires approval from **QA** and the **Team Lead** of the corresponding team (e.g. Frontend Lead if it's a frontend PR).
