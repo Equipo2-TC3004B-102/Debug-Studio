@@ -10,6 +10,17 @@ Gracias por contribuir a este proyecto.
 - Para las funciones dentro de los archivos se debe incluir argumentos de entrada, titulo y para que sirve. 
 - Al inicio de cada archivo debe incluirse la fecha de modificación y que se encuentra dentro del archivo.
 
+### Template para comentarios al inicio de cada archivo
+```
+/**
+ * FileName
+ * Description: ...
+ * Authors: Original Moncarca team
+ * Last Modification made:
+ * 00/00/2026 [YourName] Added detailed comments and documentation for clarity and maintainability.
+ */
+```
+
 ---
 
 ## 👥 Segmentación del Equipo
