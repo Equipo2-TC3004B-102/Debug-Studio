@@ -20,7 +20,14 @@ Gracias por contribuir a este proyecto.
  * 00/00/2026 [YourName] Added detailed comments and documentation for clarity and maintainability.
  */
 ```
-
+### Template para comentarios de funciones
+```
+/**
+ * FunctionName, purpose of the function...
+ * Input: values on the input
+ * Output: returned values
+ */
+```
 ---
 
 ## 👥 Segmentación del Equipo
