@@ -10,6 +10,24 @@ Thank you for contributing to this project.
 - For functions within files, input arguments, title, and purpose must be included.
 - At the top of each file, the modification date and file contents must be included.
 
+### Template for file header comments
+```
+/**
+ * FileName
+ * Description: ...
+ * Authors: Original Moncarca team
+ * Last Modification made:
+ * 00/00/2026 [YourName] Added detailed comments and documentation for clarity and maintainability.
+ */
+```
+### Template for function comments
+```
+/**
+ * FunctionName, purpose of the function...
+ * Input: values on the input
+ * Output: returned values
+ */
+```
 ---
 
 ## 👥 Team Segmentation
